@@ -14,10 +14,7 @@ while True:
     # Receive message from sender
     message, address = receiver_socket.recvfrom(1024)
 
-    # Print the received message
     print(f"Receiver - Received message from {address}: {message.decode()}")
-
-    # Get user input for response
     response = input("Receiver - Enter response to send: ")
 
     # Send the response to the sender
